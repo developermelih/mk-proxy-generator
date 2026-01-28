@@ -1,0 +1,4 @@
+PyQt5
+requests
+urllib3
+stem
