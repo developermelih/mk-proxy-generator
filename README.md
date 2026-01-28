@@ -24,7 +24,8 @@ Project structure (simplified):
 ### Requirements
 
 - **Python**: 3.8+
-- **Tor**: `tor.exe` present under `tor/` or `tor_bin/` in the project root, or otherwise installed and accessible.
+- **Tor**:
+  - Recommended: use the bundled archive `tor-expert-bundle-windows-x86_64-15.0.4.tar.gz` included in this project.
 - **Python packages** (see `requirements.txt`):
   - `PyQt5`
   - `requests`
@@ -41,15 +42,33 @@ pip install -r requirements.txt
 
 ### Installation & Run
 
-From the project root:
+1. **Extract Tor Expert Bundle (Windows)**
 
-```bash
-python main.py
-```
+   In the project root (where `main.py` lives), you should see:
 
-The main window titled **"MK Proxy Generator and Rotator"** will open.
+   - `tor-expert-bundle-windows-x86_64-15.0.4.tar.gz`
 
-If `tor.exe` is not found in `tor/` or `tor_bin/`, download a Tor binary and place it under one of those directories.
+   Extract this archive so that `tor.exe` ends up under one of the following folders:
+
+   - `tor/tor.exe`  
+   **or**
+   - `tor_bin/tor.exe`
+
+   The application will automatically look for `tor.exe` in those locations.
+
+2. **Install Python dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application**
+
+   ```bash
+   python main.py
+   ```
+
+   The main window titled **"MK Proxy Generator and Rotator"** will open.
 
 ---
 
