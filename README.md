@@ -2,6 +2,9 @@
 
 Desktop application built with **PyQt5** that manages a pool of **Tor** instances and exposes them via a local HTTP proxy. It can automatically rotate IPs or let you trigger rotation manually, making it useful for privacy, testing, scraping, and load-distribution scenarios.
 
+<img width="1403" height="840" alt="image" src="https://github.com/user-attachments/assets/25b58c7f-8ba7-45e0-97b1-a49e4ea04598" />
+
+
 ---
 
 ### Overview
@@ -143,3 +146,4 @@ Basic configuration (`pool_size`, `proxy_port`, `auto_rotate_time`) is stored in
 ---
 
 Disclaimer: This tool is for educational and testing purposes only. The author is not responsible for any misuse or violation of any third-party terms of service.
+
